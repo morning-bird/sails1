@@ -1,6 +1,6 @@
-FROM node:12.18.3-alpine3.9
+FROM node:10.22.0-stretch-slim
 
 WORKDIR /app
 
-RUN npm install -g sails grunt npm-check-updates
+RUN npm install -g sails@0.12 grunt npm-check-updates
 RUN npm install pm2 -g
